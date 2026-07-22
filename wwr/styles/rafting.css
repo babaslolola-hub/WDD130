@@ -1,4 +1,3 @@
-
 :root {
   --primary-color: #088ada; /* water blue */
   --secondary-color: #f4a261; /* warm sand */
@@ -14,11 +13,20 @@
   box-sizing: border-box;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
 }
 
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+}
 
 h1, h2 {
   font-family: var(--heading-font);
@@ -29,26 +37,20 @@ nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
 
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-}
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
+/* Hero Section Styling */
 .hero {
   position: relative;
 }
+
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -59,16 +61,31 @@ h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text – make sure there is enough contrast with the background-color */
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 16px;
+  border-radius: 5px;
 }
 
 .hero article img {
   float: right;
   width: 125px;
+  margin-left: 10px;
+}
+
+/* Social Media Footer Links */
+.socialmedia a {
+  text-decoration: none;
 }
 
 .socialmedia img {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
-

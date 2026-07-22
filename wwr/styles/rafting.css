@@ -1,6 +1,6 @@
 :root {
   --primary-color: #088ada;  /* water blue */
-  --secondary-color: #f4a261; /* warm sand */
+  --secondary-color: hsl(242, 56%, 21%); /* warm sand */
   --accent1-color: #264653;  /* dark slate blue */
   --accent2-color: #e9c46a;  /* light golden yellow */
   --heading-font: "Times New Roman", "Georgia", serif;
@@ -65,8 +65,11 @@ h1, h2 {
 }
 
 h2 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color); /* ✅ Using --secondary-color fixes the error! */
   margin-bottom: 10px;
 }
+
 
 /* Main Content Sections */
 section {
